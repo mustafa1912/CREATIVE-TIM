@@ -1,0 +1,560 @@
+/*
+.disactive-button {
+    margin-left: -5px;
+}
+
+.disactive-p {
+    position: relative;
+    left: -5px;
+}
+
+.disactive {
+    display: none;
+}
+
+
+*/
+
+.desing {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+    animation-name: sidebar-ON;
+    animation-duration: 1s;
+}
+
+@keyframes sidebar-ON {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
+.sidebar-off {
+    width: 10%;
+    animation-name: sidebar-OFF;
+    animation-duration: 1s;
+}
+
+@keyframes sidebar-OFF {
+    0% {
+        width: 20%;
+    }
+    100% {
+        width: 10%;
+    }
+}
+
+.none {
+    display: none;
+}
+
+.on {
+    margin: 10px;
+    padding: 0;
+}
+
+.button-OFF {
+    padding: 5px
+}
+
+.visible-item {
+    visibility: hidden;
+}
+
+.visible:hover .visible-item {
+    visibility: visible;
+    border: solid 0px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 14px 4px rgb(0 0 0 / 20%), 0 0px 90px 0 rgb(0 0 0 / 19%);
+    animation-name: animation-visible;
+    animation-duration: 0.8s
+}
+
+@keyframes animation-visible {
+    0% {
+        transform: translateX(50px)
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+.disactive-h6 {
+    position: absolute;
+    left: 120px;
+    background-color: #fff;
+    padding: 10px 15px;
+    color: #0D6EFD;
+    margin: 5px 10px;
+    z-index: 2;
+}
+
+.disactive-h6::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -13px;
+    height: 28px;
+    width: 30px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    border: solid 0px;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+.disactive-p {
+    position: absolute;
+    left: 120px;
+    background-color: #fff;
+    padding: 9px 15px;
+    color: #0D6EFD;
+    margin: 5px 10px;
+    z-index: 2;
+}
+
+.disactive-p::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -13px;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    border: solid 0px;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+.disactive-Dashboard {
+    position: absolute;
+    top: -15px;
+    left: 100px;
+    background-color: #fff;
+    padding: 10px 15px;
+    color: #0D6EFD;
+    margin: 5px 10px;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.disactive-Dashboard::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -14px;
+    height: 29px;
+    width: 30px;
+    background-color: #ffffff;
+    border: solid 0px;
+    border-radius: 4px 2px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+button .disactive {
+    position: absolute;
+    top: -10px;
+    left: 100px;
+    background-color: #fff;
+    padding: 10px 15px;
+    color: #0D6EFD;
+    margin: 5px 10px;
+    visibility: hidden;
+    z-index: 5;
+}
+
+button .disactive::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -14px;
+    height: 29px;
+    width: 30px;
+    background-color: #ffffff;
+    border: solid 0px;
+    border-radius: 4px 2px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+button .disactive-i {
+    display: none;
+}
+
+.sidebar .overlay {
+    background-color: rgb(0 0 0 / 60%);
+}
+
+.buttons button {
+    margin-top: 10px;
+    transition: 0.8;
+}
+
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.342);
+}
+
+.buttons .row {
+    margin-top: auto;
+}
+
+.image {
+    width: 50%;
+}
+
+
+/*ul*/
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+ul li .row {
+    height: 30px;
+    font-size: 14px;
+}
+
+button .row {
+    font-size: 18px;
+}
+
+
+/*
+a {
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}*/
+
+@keyframes anomation {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(00px);
+    }
+}
+
+.anomation-li-1 {
+    animation-name: anomation;
+    animation-duration: 0.8s;
+}
+
+.anomation-li-2 {
+    animation-name: anomation;
+    animation-duration: 1.5s;
+}
+
+.anomation-li-3 {
+    animation-name: anomation;
+    animation-duration: 2s;
+}
+
+.anomation-li-4 {
+    animation-name: anomation;
+    animation-duration: 2.5s;
+}
+
+.anomation-li-5 {
+    animation-name: anomation;
+    animation-duration: 3s;
+}
+
+.anomation-li-6 {
+    animation-name: anomation;
+    animation-duration: 3.5s;
+}
+
+.anomation-li-7 {
+    animation-name: anomation;
+    animation-duration: 4s;
+}
+
+.anomation-li-8 {
+    animation-name: anomation;
+    animation-duration: 4.5s;
+}
+
+a:hover {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.185);
+}
+
+@keyframes active {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ul active & disactive*/
+
+
+/*
+h6 .off,
+p .off {
+    position: absolute;
+    top: 100px;
+    color: red;
+}
+*/
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15 px;
+    margin-left: -15 px;
+    align-items: baseline;
+}
+
+.rounded-circle {
+    padding: 5 px;
+}
+
+.user-disactive {
+    display: none;
+}
+
+.user-active {
+    display: block;
+    animation-name: active;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.8s;
+}
+
+.pages-disactive {
+    display: none;
+}
+
+.pages-active {
+    display: block;
+    animation-name: active;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.8s;
+}
+
+.Components-disactive {
+    display: none;
+}
+
+.Components-active {
+    display: block;
+    animation-name: active;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.8s;
+}
+
+.Forms-disactive {
+    display: none;
+}
+
+.Forms-active {
+    display: block;
+    animation-name: active;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.8s;
+}
+
+.Tables-disactive {
+    display: none;
+}
+
+.Tables-active {
+    display: block;
+    animation-name: active;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.8s;
+}
+
+.Maps-disactive {
+    display: none;
+}
+
+.Maps-active {
+    display: block;
+    animation-name: active;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.8s;
+}
+
+
+/* end ul active & disactive*/
+
+.col-9 {
+    background-color: #EDEDED;
+    position: relative;
+}
+
+.setting {
+    position: fixed;
+    top: 100px;
+    right: 2px;
+    padding: 15px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.setting i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.SIDEBAR-FLOUT {
+    position: fixed;
+    z-index: 3;
+    width: 250px;
+    top: 60px;
+    right: 100px;
+}
+
+.images img {
+    width: 20%;
+    height: 80px;
+}
+
+.on-off {
+    display: none;
+}
+
+.SIDEBAR-FLOUT::after {
+    z-index: 2;
+    box-shadow: 3rem -1rem 3rem rgb(0 0 0 / 20%);
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    background-color: #fff;
+    border-radius: 0px;
+}
+
+.SIDEBAR-FLOUT p {
+    font-size: 14px;
+}
+
+.bg-hr {
+    background-color: #e7e7e7;
+}
+
+.size {
+    width: 15px;
+    height: 15px;
+    margin: 0px 5px 0px;
+}
+
+.map {
+    margin-top: 50px;
+}
+
+.map i {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    bottom: 30px;
+    padding: 30px 28px;
+    background-color: #45A149;
+    margin-right: 25px;
+    animation-name: Icons;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+}
+
+@keyframes Icons {
+    0% {
+        bottom: 30px;
+    }
+    33% {
+        bottom: 50px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
+.bg-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sections {
+    display: flex;
+}
+
+.section-off {
+    width: 90%;
+}
+
+.sections .section1,
+.section2,
+.section3 {
+    padding: 10px;
+}
+
+.sections p,
+i {
+    color: #a8a8a8;
+    font-size: 15px;
+}
+
+.sections img {
+    z-index: 1;
+    position: relative;
+    bottom: 25px;
+    transition: 0.7s;
+}
+
+.section1:hover img {
+    bottom: 60px;
+}
+
+.section2:hover img {
+    bottom: 60px;
+}
+
+.section3:hover img {
+    bottom: 60px;
+}
+
+.sections .icons {
+    position: relative;
+    bottom: 45px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 10px;
+}
+
+.footer-section p,
+i {
+    font-size: 14px;
+}
+
+.footer-section p {
+    margin-left: 5px;
+}
+
+.footer-sec {
+    display: flex;
+}

@@ -1,0 +1,76 @@
+.body {
+    background: url(../css/images/sidebar-4.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.row-header,
+.row-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+
+.bg {
+    background-color: rgb( 0 0 0/ 50%);
+    min-height: 100vh;
+}
+
+
+/*planes*/
+
+.planes {
+    text-align: center;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 8px;
+    transition: 1s;
+}
+
+
+/*hover start*/
+
+.planes:hover {
+    color: #000;
+    background-color: rgb( 255 255 255 / 100%);
+    border-color: #E91E63;
+}
+
+.planes:hover .plan-icon {
+    color: #E91E63;
+    border-color: rgb( 0 0 0/ 0%);
+}
+
+.planes:hover button {
+    color: rgb(255, 255, 255);
+    background-color: #E91E63;
+    border-color: #E91E63;
+}
+
+.planes:hover .plan-name {
+    color: #000;
+}
+
+.planes:hover .plan-info {
+    color: #000;
+}
+
+
+/* hovrt end*/
+
+.plan-name {
+    font-size: 12px;
+    color: rgb(224, 224, 224);
+}
+
+.plan-info {
+    font-size: 14px;
+    color: rgb(224, 224, 224);
+}
+
+.plan-icon {
+    padding: 35px;
+    font-size: 50px;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 50%
+}
