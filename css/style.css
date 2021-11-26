@@ -1,0 +1,188 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-size: cover;
+    font-family: 'Cairo', sans-serif;
+    text-transform: capitalize;
+    background-color: #eeeeee42;
+}
+
+
+/* sidebar */
+
+.fas {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.sidebar {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 0px solid;
+    border-radius: 15px;
+    background-image: url('../css/images/pexels-eberhard-grossgasteiger-1624438.jpg');
+    background-size: cover;
+}
+
+.Dashboards {
+    background-color: rgb(255 255 255 / 20%);
+}
+
+
+/* form-control */
+
+li:hover {
+    background-color: rgb(0 0 0 / 20%);
+}
+
+.m-inherit {
+    margin: inherit;
+}
+
+.m-inherit .sticky {
+    position: sticky;
+    top: 2px;
+    z-index: 1;
+    background-color: #e9ecef;
+}
+
+input[type=text] {
+    background-color: #e9ecef;
+}
+
+
+/* icons */
+
+.col .container .col-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col .container .col-2 .fas {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.col hr {
+    width: 85%;
+}
+
+
+/* section */
+
+section .position-relative {
+    top: -35px;
+    left: 10px;
+    transition: 0.8s;
+    animation-name: section-span;
+    animation-duration: 0.8s;
+}
+
+section .position-relative:hover {
+    top: -50px;
+}
+
+@keyframes section-span {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(-0px);
+    }
+}
+
+.m-inherit .mt-5 {
+    border: 0px solid;
+    border-radius: 10px;
+}
+
+.col .container .bg-success .fas {
+    font-size: 30px;
+}
+
+.col .container .position-relative .position-absolute {
+    top: -8px;
+}
+
+.col .container table tr td span {
+    font-size: 14px;
+}
+
+
+/* myChart */
+
+.myChart .container .col-4 h6 {
+    font-weight: 700;
+}
+
+.myChart .container .col-4 p {
+    font-weight: 400;
+}
+
+.myChart canvas {
+    z-index: 1;
+    transition: 0.6s;
+}
+
+.myChart .fa-edit {
+    position: relative;
+    top: -30px;
+    left: 50%;
+    font-weight: 600;
+    z-index: -1;
+}
+
+.myChart .col-4:hover canvas {
+    transform: translateY(-30px);
+}
+
+
+/**/
+
+.text-end {
+    text-align: end;
+}
+
+.text-end p b {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+/* information */
+
+.information .fas {
+    transform: translate(0px, -15px);
+    transition: 0.8s;
+}
+
+.information .col:hover .fas {
+    transform: translate(0px, -25px);
+}
+
+
+/* places */
+
+.places img {
+    transition: 0.8s;
+}
+
+.places .col:hover img {
+    transform: translateY(-30px);
+}
+
+.places a {
+    text-decoration: none;
+}
+
+.places h5 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.places p {
+    text-align: center;
+}
