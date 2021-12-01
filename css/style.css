@@ -1,21 +1,28 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background-size: cover;
     font-family: 'Cairo', sans-serif;
     text-transform: capitalize;
     background-color: #eeeeee42;
+    /* background-color: #1a2035; */
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
 /* sidebar */
 
 .fas {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 p {
     font-size: 16px;
 }
+
+
+/*background-color: rgb(0 0 0 / 60%);*/
 
 .sidebar {
     height: 100vh;
@@ -23,8 +30,12 @@ p {
     overflow-y: scroll;
     border: 0px solid;
     border-radius: 15px;
-    background-image: url('../css/images/pexels-eberhard-grossgasteiger-1624438.jpg');
+    background-image: url('../css/images/pexels-eberhard-grossgasteiger-2098427.jpg');
     background-size: cover;
+}
+
+.hiden {
+    left: -600px;
 }
 
 .Dashboards {
@@ -32,7 +43,11 @@ p {
 }
 
 
-/* form-control */
+/*header */
+
+.header {
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
 
 li:hover {
     background-color: rgb(0 0 0 / 20%);
@@ -42,36 +57,61 @@ li:hover {
     margin: inherit;
 }
 
-.m-inherit .sticky {
-    position: sticky;
-    top: 2px;
+.m-inherit .header {
+    top: 5px;
     z-index: 1;
+    background-color: #ededed;
+}
+
+.header form input {
     background-color: #e9ecef;
 }
 
-input[type=text] {
-    background-color: #e9ecef;
-}
 
+/* header icons */
 
-/* icons */
-
-.col .container .col-2 {
+.col .header .col-2 {
     display: flex;
     justify-content: space-between;
 }
 
-.col .container .col-2 .fas {
+.col .header .col-2 .fas {
     font-size: 18px;
     margin-top: 10px;
+}
+
+.col .header .col-2 .fas .translate-middle {
+    top: -5px;
+    right: -40px;
 }
 
 .col hr {
     width: 85%;
 }
 
+.mini-img-sidebar {
+    padding: 0%;
+    width: 100%;
+}
+
+.mini-icon-sidebar .fas {
+    padding: 8px;
+}
+
+.mini-icon-sidebar {
+    background-color: rgb(0 0 0 / 50%);
+}
+
 
 /* section */
+
+section {
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+section .position-relative .fas {
+    font-size: 25px;
+}
 
 section .position-relative {
     top: -35px;
@@ -122,6 +162,10 @@ section .position-relative:hover {
     font-weight: 400;
 }
 
+.myChart .canvas {
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
 .myChart canvas {
     z-index: 1;
     transition: 0.6s;
@@ -141,6 +185,12 @@ section .position-relative:hover {
 
 
 /**/
+
+.Followers,
+.Today-Users,
+.Bookings {
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
 
 .text-end {
     text-align: end;
@@ -166,11 +216,19 @@ section .position-relative:hover {
 
 /* places */
 
+.Barcelona,
+.London,
+.Milan {
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
 .places img {
     transition: 0.8s;
 }
 
-.places .col:hover img {
+.places .Barcelona:hover img,
+.places .London:hover img,
+.places .Milan:hover img {
     transform: translateY(-30px);
 }
 
@@ -185,4 +243,94 @@ section .position-relative:hover {
 
 .places p {
     text-align: center;
+}
+
+
+/* setting btn */
+
+.setting-btn {
+    top: 80px;
+    right: 15px;
+    border-radius: 5px;
+}
+
+.setting-btn .fa-cog {
+    font-size: 25px;
+    padding: 12px;
+    transition: 0.8s;
+}
+
+.setting-btn:hover .fa-cog {
+    transform: rotate(35deg);
+}
+
+
+/* float-section */
+
+.float-section {
+    top: 25px;
+    right: -150%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px 4px rgb(0 0 0 / 20%), 0 0px 90px 0 rgb(0 0 0 / 19%);
+    transition: 0.8s;
+    z-index: 2;
+}
+
+.float-section::after {
+    z-index: 2;
+    box-shadow: 3rem -1rem 3rem rgb(0 0 0 / 20%);
+    content: "";
+    position: absolute;
+    top: 9%;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    background-color: #fff;
+    border-radius: 0px;
+}
+
+.float-section .options,
+.float-section .Choose {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.float-section h5,
+.float-section .Colors {
+    font-weight: 700;
+}
+
+.float-section .bg button {
+    margin: 5px;
+}
+
+.float-section .fab {
+    font-size: 16px;
+}
+
+.show-float-section {
+    right: 100px;
+}
+
+
+/* up btn */
+
+.up-btn {
+    bottom: 30px;
+    right: -100px;
+    transition: 0.8s;
+}
+
+.up-btn button .fa-arrow-up {
+    font-size: 18px;
+    transition: 0.6s;
+}
+
+.up-btn button:hover .fa-arrow-up {
+    transform: translateY(-3px);
+}
+
+.show {
+    right: 15px;
 }
